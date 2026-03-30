@@ -1,0 +1,27 @@
+packages:
+  "framer-motion": "For smooth page transitions, fortune wheel animations, and case opening effects"
+  "socket.io-client": "Real-time chat functionality as requested"
+  "date-fns": "For formatting chat message timestamps and last seen status"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility to merge tailwind classes"
+  "react-hook-form": "For form state management"
+  "@hookform/resolvers": "For zod validation integration"
+
+images:
+  - path: "artifacts/klifgram/public/images/auth-bg.png"
+    description: "Abstract dark navy and deep blue geometric mesh background, subtle light leaks, premium digital aesthetic"
+    aspect_ratio: "16:9"
+  - path: "artifacts/klifgram/public/images/wheel-center.png"
+    description: "A shiny golden star coin centered on a dark premium background, 3d rendered, sharp"
+    aspect_ratio: "1:1"
+  - path: "artifacts/klifgram/public/images/case-closed.png"
+    description: "A premium digital loot box, sleek dark metal with glowing blue neon accents, closed"
+    aspect_ratio: "1:1"
+  - path: "artifacts/klifgram/public/images/case-open.png"
+    description: "A premium digital loot box, opened with glowing light shining out from inside, dramatic lighting"
+    aspect_ratio: "1:1"
+
+notes:
+  - Assumes socket.io connects to window.location.origin
+  - Auth uses httpOnly cookies, so all API calls include credentials
+  - Admin features depend on user.isAdmin flag or username === 'henowsky'
